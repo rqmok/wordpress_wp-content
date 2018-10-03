@@ -1,0 +1,721 @@
+/*
+Theme Name: HRAFF Concept
+Author: Zeeshan Khan
+Description: Concept HRAFF theme converted to Wordpress
+Version: 0.0.1
+Tags: human rights arts and film festival, hraff, concept, simple, black and white, side navigation, sidebar, cards, sponser banner
+*/
+
+/*
+BEGIN RESETS
+*/
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*
+END RESETS
+*/
+
+/*
+BEGIN THEME STYLES
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body Defaults */
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin-top: 50px;
+}
+
+/* Links Defaults */
+a:link {
+    text-decoration: none;
+}
+
+a:link, a:hover, a:visited, a:active {
+    color: black;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Side Navigation */
+    nav.desktop {
+        height: 100%;
+        width: 250px;
+        margin-left: 20px;
+        position: fixed;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 55% 5% 10%;
+    }
+
+    nav.desktop .logo {
+        width: 100%;
+        height: 100%;
+        grid-row: 1;
+    }
+
+    nav.desktop .nav-links {
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav.desktop .nav-links li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    nav.desktop a {
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    /* Icons */
+    nav.desktop .nav-icons {
+        grid-row: 4;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav.desktop .nav-icons li {
+        padding: 1vmin;
+        display: block;
+        flex: 1;
+    }
+
+    nav.desktop .nav-icons img {
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    /* Main Area */
+    .main-content-area {
+        margin-left: 250px;
+        width: 1fr;
+        top: 0;
+        padding: 4vh 5vw;
+    }
+
+    .content {
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto 250px;
+        grid-template-rows: auto;
+    }
+
+    #content-text {
+        grid-column: 1;
+        padding-right: 50px;
+        height: 100%;
+    }
+
+    #content-right-column {
+        grid-column: 2;
+        height: 100%;
+    }
+
+    .footer-links-input-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    .footer-links {
+        width: 50%;
+    }
+
+    .footer-email-input {
+        width: 50%;
+    }
+
+    .footer-email-input form {
+        display: flex;
+        height: 90%;
+        align-items: stretch;
+    }
+
+    .button.subscribe {
+        height: 100%;
+        width: 200px;
+    }
+
+    .festival-dates {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    .festival-date {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    section, main {
+        padding: 10px;
+    }
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+
+    .footer-email-input {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button.subscribe {
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .festival-dates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .festival-date {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-content-area {
+        margin-top: 48px;
+        z-index: 1;
+    }
+
+    div.mobile {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        z-index: 4;
+    }
+
+    div.mobile .logo {
+        height: 100%;
+        flex: 1 1 auto;
+    }
+
+    #burger-menu {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+
+    .burger-line {
+        height: 1px;
+        margin-bottom: 7px;
+        background-color: black;
+        transition: 0.5s;
+    }
+
+    #burger-line-1 {
+        margin-top: 7px;
+    }
+
+    .menu-open #burger-line-1 {
+        transform: translateY(4px) rotate(45deg);
+    }
+
+    .menu-open #burger-line-2 {
+        transform: translateY(-4px) rotate(135deg);
+    }
+
+    #search-icon {
+        padding: 15px;
+        width: 48px;
+    }
+
+    .mobile.menu {
+        padding-top: 48px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-rows: auto 100px;
+        background-color: white;
+        transform: translateY(-100vh);
+        transition: 0.5s;
+    }
+
+    .menu-open .mobile.menu {
+        transform: translateY(0);
+    }
+
+    .mobile.menu .nav-links {
+        height: 100%;
+        grid: 1;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    .mobile.menu .nav-icons {
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .mobile.menu .nav-icons img {
+        height: 100%;
+        padding: 35px;
+    }
+
+    .menu-open .main-content-area {
+        pointer-events: none;
+        height: 100vh;
+        padding-bottom: 48px;
+        overflow: hidden;
+    }
+}
+
+/* Video */
+.video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#content-header {
+    padding-bottom: 30px;
+}
+
+#content-header h1 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#content-header h2 {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#content-text {
+    line-height: 30px;
+}
+
+#content-right-column {
+    width: 100%;
+}
+
+.italics {
+    font-style: italic;
+}
+
+#content-text p {
+    margin-bottom: 30px;
+}
+
+#content-text ul {
+    margin-left: 2vw;
+}
+
+#sponsor-banner {
+    display: flex;
+    justify-content: center;
+}
+
+#sponsor-banner img {
+    width: 80%;
+    height: 100%;
+}
+
+.button {
+    border-style: none;
+    background-color: #00796B;
+    color: white;
+    padding: 1vmin;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #00897B;
+}
+
+.button:active {
+    background-color: #00796B;
+}
+
+.button.buy-tickets {
+    height: 50px;
+    width: 100%;
+}
+
+/* Aside Information Styling */
+.aside-info-container {
+    height: 100%;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.aside-info {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.aside-info-header {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.aside-info-content {
+    line-height: 25px;
+}
+
+.aside-info-special-container {
+    padding-top: 30px;
+}
+
+.aside-info-special-header {
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.social-media-icons img {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 1vmin;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    border-radius: 5px;
+}
+
+.box-shadow {
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.box-shadow:hover {
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content {
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.card-image {
+    grid-row: 1;
+    width: 100%;
+}
+
+.card-image img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.card-description {
+    padding-bottom: 20px;
+}
+
+.card-event-date {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.card-action-link {
+    display: flex;
+    justify-content: flex-end;
+    color: blue;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.sponsor-images img {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sponsor-images {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.separator-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.separator {
+    background-color: black;
+    border-radius: 3px;
+    width: 100px;
+    height: 2px;
+}
+
+.festival-dates {
+    margin-top: 20px;
+}
+
+.festival-date {
+    font-weight: bolder;
+}
+
+.footer-links {
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.email-text-input {
+    height: 100%;
+    width: 100%;
+    flex: 2 1 auto;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+/*
+END THEME STYLES
+*/
