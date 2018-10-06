@@ -7,6 +7,7 @@
                 ] );
 
                 foreach ( $event_posts as $post ) {
+                    setup_postdata($post);
             ?>
                 <div class="card box-shadow">
                     <div class="card-image">
@@ -31,7 +32,10 @@
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+            <?php
+                }
+                wp_reset_postdata();
+            ?>
         </section>
         <section class="sponsor-images">
             <img src="<?php echo get_template_directory_uri() ?>/images/bankaustralia.png" alt="Bank Australia">
@@ -67,7 +71,7 @@
                 </form>
             </div>
         </section>
-        <section class="footer-copyright">&copy <?php echo wp_title('-', true, 'right'); bloginfo('name'); ?></section>
+        <section class="footer-copyright">&copy <?php bloginfo('name'); ?></section>
     </article>
 
     <script src="<?php echo get_template_directory_uri() ?>/scripts/main.js"></script>
