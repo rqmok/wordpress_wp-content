@@ -41,27 +41,7 @@
 
     <nav class="mobile menu">
         <ul class="nav-links">
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Program</a>
-            </li>
-            <li>
-                <a href="#">Cineseeds</a>
-            </li>
-            <li>
-                <a href="#">News</a>
-            </li>
-            <li>
-                <a href="#">Our Impact</a>
-            </li>
-            <li>
-                <a href="#">Get Involved</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
+            <?php wp_nav_menu(['theme_location' => 'main-menu']); ?>
         </ul>
         <ul class="nav-icons">
             <li>
