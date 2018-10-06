@@ -617,7 +617,6 @@ a:link, a:hover, a:visited, a:active {
 
 .card-image {
     grid-row: 1;
-    width: 100%;
 }
 
 .card-image img {

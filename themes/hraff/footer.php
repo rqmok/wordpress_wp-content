@@ -1,3 +1,38 @@
+        <section class="cards">
+            <?php
+                $event_posts = get_posts( [
+                    'post_type' => 'event',
+                    'numberposts' => 3,
+                    'orderby' => 'rand'
+                ] );
+
+                foreach ( $event_posts as $post ) {
+            ?>
+                <div class="card box-shadow">
+                    <div class="card-image">
+                        <img width="100%" src="<?php the_post_thumbnail_url(); ?>" />
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <?php the_title(); ?>
+                        </div>
+                        <div class="card-description">
+                            <?php
+                                if (str_word_count(get_field('summary')) <= 25) {
+                                    the_field('summary');
+                                }
+                            ?>
+                        </div>
+                        <div class="card-event-date">
+                            <?php echo date_format(date_create(get_field('when')), 'D d M').' '.get_field('city'); ?>
+                        </div>
+                        <div class="card-action-link">
+                            <a href="<?php the_permalink(); ?>">More info >></a>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </section>
         <section class="sponsor-images">
             <img src="<?php echo get_template_directory_uri() ?>/images/bankaustralia.png" alt="Bank Australia">
             <img src="<?php echo get_template_directory_uri() ?>/images/lush.png" alt="Lush">
@@ -36,5 +71,7 @@
     </article>
 
     <script src="<?php echo get_template_directory_uri() ?>/scripts/main.js"></script>
+
+    <?php wp_footer(); ?>
 </body>
 </html>
