@@ -35,11 +35,11 @@
     ?>
         <div class="card box-shadow">
             <div class="card-image">
-                <a href="<?php the_permalink(); ?>"><img width="100%" src="<?php the_post_thumbnail_url(); ?>" />
+                <a href="<?php the_permalink(); ?>"><img width="100%" src="<?php the_post_thumbnail_url(); ?>" /></a>
             </div>
             <div class="card-content">
                 <div class="card-title">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </div>
                 <div class="card-description">
                     <?php
