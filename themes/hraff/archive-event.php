@@ -14,7 +14,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-title">
-                        <a href="<?php the_permalink(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </div>
                     <div class="card-description">
                         <?php
