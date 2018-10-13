@@ -132,6 +132,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #FFFFFF; /* White */
     color: #022B3A; /* Maastricht Blue */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 250px auto;
 }
 
 section {
@@ -433,309 +436,132 @@ ul {
     list-style: none;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-    .desktop {
-        display: block;
-    }
-
-    .mobile {
-        display: none;
-    }
-
-    body {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 250px auto;
-    }
-
-    /* Side Navigation */
-    nav.desktop {
-        grid-column: 1;
-        height: 100%;
-        width: 250px;
-        margin-left: 20px;
-        position: fixed;
-        text-align: center;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 30% 55% 5% 10%;
-    }
-
-    nav.desktop .logo {
-        width: 100%;
-        height: 100%;
-        grid-row: 1;
-    }
-
-    .nav-links, .menu, .menu-main-menu-container {
-        height: 100%;
-    }
-
-    nav.desktop .menu {
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    nav.desktop .menu li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    nav.desktop a {
-        padding: 10px;
-        text-transform: uppercase;
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-
-    /* Icons */
-    nav.desktop .nav-icons {
-        grid-row: 4;
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    nav.desktop .nav-icons li {
-        padding: 1vmin;
-        display: block;
-        flex: 1;
-    }
-
-    nav.desktop .nav-icons svg {
-        cursor: pointer;
-    }
-
-    /* Main Area */
-    .main-content-area {
-        grid-column: 2;
-        width: 100%;
-        top: 0;
-        padding: 4vh 5vw;
-    }
-
-    .content {
-        margin-top: 20px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto 250px;
-        grid-template-rows: auto;
-    }
-
-    #content-text {
-        grid-column: 1;
-        padding-right: 50px;
-        height: 100%;
-    }
-
-    #content-right-column {
-        grid-column: 2;
-        height: 100%;
-    }
-
-    .footer-links-input-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: stretch;
-    }
-
-    .footer-links {
-        width: 50%;
-    }
-
-    .footer-email-input {
-        width: 50%;
-    }
-
-    .footer-email-input form {
-        display: flex;
-        height: 90%;
-        align-items: stretch;
-    }
-
-    .button.subscribe {
-        height: 100%;
-        width: 200px;
-    }
-
-    .festival-dates {
-        display: flex;
-        align-items: stretch;
-        justify-content: space-around;
-    }
-
-    .festival-date {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
+/* Side Navigation */
+nav.desktop {
+    grid-column: 1;
+    height: 100%;
+    width: 250px;
+    margin-left: 20px;
+    position: fixed;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 55% 5% 10%;
 }
 
-/* Mobile and Tablet */
-@media (max-width: 767px) {
-    .desktop {
-        display: none;
-    }
+nav.desktop .logo {
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+}
 
-    .mobile {
-        display: block;
-    }
+.nav-links, .menu, .menu-main-menu-container {
+    height: 100%;
+}
 
-    .card {
-        width: 100%;
-        height: auto;
-    }
+nav.desktop .menu {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    section, main {
-        padding: 10px;
-    }
+nav.desktop .menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
-    .page-heading {
-        margin-top: 100px;
-        margin-left: 20px;
-    }
+nav.desktop a {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
-    .footer-links {
-        text-align: center;
-        margin-bottom: 10vh;
-    }
+/* Icons */
+nav.desktop .nav-icons {
+    grid-row: 4;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
 
-    .footer-email-input {
-        display: flex;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
+nav.desktop .nav-icons li {
+    padding: 1vmin;
+    display: block;
+    flex: 1;
+}
 
-    .button.subscribe {
-        height: 50px;
-        width: 100%;
-        margin-top: 20px;
-    }
+nav.desktop .nav-icons svg {
+    cursor: pointer;
+}
 
-    .festival-dates {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+/* Main Area */
+.main-content-area {
+    grid-column: 2;
+    width: 100%;
+    top: 0;
+    padding: 4vh 5vw;
+}
 
-    .festival-date {
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
+.content {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-template-rows: auto;
+}
 
-    .main-content-area {
-        margin-top: 48px;
-        z-index: 1;
-    }
+#content-text {
+    grid-column: 1;
+    padding-right: 50px;
+    height: 100%;
+}
 
-    div.mobile {
-        background-color: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 48px;
-        display: flex;
-        align-items: stretch;
-        justify-content: space-around;
-        z-index: 4;
-    }
+#content-right-column {
+    grid-column: 2;
+    height: 100%;
+}
 
-    div.mobile .logo {
-        height: 100%;
-        flex: 1 1 auto;
-    }
+.footer-links-input-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
 
-    #burger-menu {
-        width: 48px;
-        height: 48px;
-        padding: 12px;
-    }
+.footer-links {
+    width: 50%;
+}
 
-    .burger-line {
-        height: 1px;
-        margin-bottom: 7px;
-        background-color: black;
-        transition: 0.5s;
-    }
+.footer-email-input {
+    width: 50%;
+}
 
-    #burger-line-1 {
-        margin-top: 7px;
-    }
+.footer-email-input form {
+    display: flex;
+    height: 90%;
+    align-items: stretch;
+}
 
-    .menu-open #burger-line-1 {
-        transform: translateY(4px) rotate(45deg);
-    }
+.button.subscribe {
+    height: 100%;
+    width: 200px;
+}
 
-    .menu-open #burger-line-2 {
-        transform: translateY(-4px) rotate(135deg);
-    }
+.festival-dates {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
 
-    #search-icon {
-        padding: 15px;
-        width: 48px;
-    }
-
-    .mobile.menu {
-        padding-top: 48px;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: 3;
-        top: 0;
-        left: 0;
-        display: grid;
-        grid-template-rows: auto 100px;
-        background-color: white;
-        transform: translateY(-100vh);
-        transition: 0.5s;
-    }
-
-    .menu-open .mobile.menu {
-        transform: translateY(0);
-    }
-
-    .mobile.menu .nav-links {
-        height: 100%;
-        grid: 1;
-        font-size: 1.5em;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: stretch;
-        justify-content: space-around;
-    }
-
-    .mobile.menu .nav-icons {
-        grid-row: 2;
-        width: 100%;
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-    }
-    
-    .mobile.menu .nav-icons img {
-        height: 100%;
-        padding: 35px;
-    }
-
-    .menu-open .main-content-area {
-        pointer-events: none;
-        height: 100vh;
-        padding-bottom: 48px;
-        overflow: hidden;
-    }
+.festival-date {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 /*
