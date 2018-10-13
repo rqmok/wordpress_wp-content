@@ -1,11 +1,11 @@
-<header>
-    <?php if (get_field('youtube_video_id')) { ?>
-        <p class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php the_field('youtube_video_id'); ?>" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-        </p>
-    <?php } ?>
-</header>
+<?php if (get_field('youtube_video_id')) { ?>
+    <header class="box-shadow">
+            <p class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php the_field('youtube_video_id'); ?>" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </p>
+    </header>
+<?php } ?>
 <section id="content-header">
     <h1><?php the_title(); ?></h1>
     

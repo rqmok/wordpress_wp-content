@@ -130,6 +130,8 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF; /* White */
+    color: #022B3A; /* Maastricht Blue */
 }
 
 section {
@@ -142,7 +144,16 @@ a:link {
 }
 
 a:link, a:hover, a:visited, a:active {
-    color: black;
+    color: #022B3A;
+}
+
+.logo, .user, .cart, .search {
+    fill: #022B3A;
+}
+
+svg.user, svg.cart, svg.search {
+    height: 40%;
+    width: 40%;
 }
 
 /* Video */
@@ -214,7 +225,7 @@ h2 {
 
 .button {
     border-style: none;
-    background-color: #00796B;
+    background-color: #1F7A8C; /* Metallic Seaweed */
     color: white;
     padding: 1vmin;
     font-family: 'Roboto', sans-serif;
@@ -225,11 +236,11 @@ h2 {
 }
 
 .button:hover {
-    background-color: #00897B;
+    background-color: #70AAB5; /* Moonstone Blue */
 }
 
 .button:active {
-    background-color: #00796B;
+    background-color: #1F7A8C; /* Metallic Seaweed */
 }
 
 .button.buy-tickets {
@@ -442,7 +453,7 @@ ul {
     nav.desktop {
         grid-column: 1;
         height: 100%;
-        width: auto;
+        width: 250px;
         margin-left: 20px;
         position: fixed;
         text-align: center;
@@ -494,8 +505,7 @@ ul {
         flex: 1;
     }
 
-    nav.desktop .nav-icons img {
-        width: 50%;
+    nav.desktop .nav-icons svg {
         cursor: pointer;
     }
 
