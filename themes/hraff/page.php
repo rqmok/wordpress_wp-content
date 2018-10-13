@@ -6,11 +6,9 @@
         <section id="content-header">
             <h1><?php the_title(); ?></h1>
         </section>
-        <main class="content">
-            <div id="content-text">
-                <?php the_content(); ?>
-            </div>
-        </main>
+        <div id="content-text">
+            <?php the_content(); ?>
+        </div>
     <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
