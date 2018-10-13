@@ -20,7 +20,7 @@
     <?php get_sidebar() ;?>
 </main>
 <section id="sponsor-banner">
-    <img src="<?php get_template_directory_uri() ?>/images/banner.gif" alt="Sponser Advertisement">
+    <img src="<?php echo get_template_directory_uri() ?>/images/banner.gif" alt="Sponser Advertisement">
 </section>
 <section class="cards">
     <?php
