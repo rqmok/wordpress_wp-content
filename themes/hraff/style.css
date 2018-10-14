@@ -365,9 +365,16 @@ h2 {
 .card-action-link {
     display: flex;
     justify-content: flex-end;
-    color: blue;
+    color: #1F7A8C;
     font-size: 0.9em;
     cursor: pointer;
+}
+
+.card-action-link a:link,
+.card-action-link a:hover,
+.card-action-link a:visited,
+.card-action-link a:active {
+    color: #1F7A8C;
 }
 
 .sponsor-images img {
