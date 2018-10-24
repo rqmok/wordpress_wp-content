@@ -6,7 +6,17 @@
 
     <section class="cards">
 
-        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+        <?php
+            $event_posts = get_posts( [
+                'post_type' => 'event',
+                'numberposts' => -1,
+                'orderby' => 'title',
+                'order' => 'ASC'
+            ] );
+
+            foreach ( $event_posts as $post ) {
+                setup_postdata($post);
+        ?>
             
             <div class="card box-shadow">
                 <div class="card-image">
@@ -32,7 +42,10 @@
                 </div>
             </div>
 
-        <?php endwhile; endif; ?>
+        <?php
+            }
+            wp_reset_postdata();
+        ?>
 
     </section>
 
