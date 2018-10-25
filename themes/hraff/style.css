@@ -526,7 +526,6 @@ nav.desktop .nav-icons svg {
 #content-text {
     grid-column: 1;
     padding-right: 50px;
-    height: 100%;
 }
 
 #content-right-column {
