@@ -2,7 +2,15 @@
 
 <?php get_header(); ?>
 
-    <h1 class="page-heading">Events</h1>
+    <h1 class="page-heading">
+        <?php
+            if (is_post_type_archive()) {
+                post_type_archive_title();
+            } else {
+                single_term_title();
+            }
+        ?>
+    </h1>
 
     <?php
         $taxonomies = get_taxonomies( array( '_builtin' => false ) );
@@ -32,7 +40,10 @@
 
             get_template_part('card', get_post_format());
 
-        endwhile; endif; ?>
+        endwhile;
+        else: ?>
+            <span id="no-results">No results found</span>
+        <?php endif; ?>
 
     </section>
 

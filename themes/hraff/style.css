@@ -588,6 +588,12 @@ nav.desktop .nav-icons svg {
     padding: 7px 10px;
 }
 
+#no-results {
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 /*
 END THEME STYLES
 */
