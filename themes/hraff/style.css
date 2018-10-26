@@ -588,6 +588,10 @@ nav.desktop .nav-icons svg {
     padding: 7px 10px;
 }
 
+.filters li.selected {
+    background-color: #BFDBF7;
+}
+
 #no-results {
     margin: auto;
     font-size: 1.5em;

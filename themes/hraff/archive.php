@@ -28,7 +28,11 @@
 
                     foreach ( $terms as $term ) {
                 ?>
-                    <li><a href="<?php echo get_term_link($term, $taxonomy) ?>"><?php echo $term->name ?></a></li>
+                    <li <?php if (strpos(strtolower(get_the_archive_title()), strtolower($term->name)) !== false) { echo 'class="selected"'; } ?>>
+                        <a href="<?php echo get_term_link($term, $taxonomy) ?>">
+                            <?php echo $term->name ?>
+                        </a>
+                    </li>
                 <?php } ?>
             </ul>
         </section>
