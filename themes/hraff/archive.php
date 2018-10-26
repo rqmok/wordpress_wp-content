@@ -4,11 +4,8 @@
 
     <h1 class="page-heading">
         <?php
-            if (is_post_type_archive()) {
-                post_type_archive_title();
-            } else {
-                single_term_title();
-            }
+            $title = explode(': ', get_the_archive_title())[1];
+            echo $title;
         ?>
     </h1>
 
@@ -28,7 +25,7 @@
 
                     foreach ( $terms as $term ) {
                 ?>
-                    <li <?php if (strpos(strtolower(get_the_archive_title()), strtolower($term->name)) !== false) { echo 'class="selected"'; } ?>>
+                    <li <?php if (strtolower($title) == strtolower($term->name)) { echo 'class="selected"'; } ?>>
                         <a href="<?php echo get_term_link($term, $taxonomy) ?>">
                             <?php echo $term->name ?>
                         </a>
