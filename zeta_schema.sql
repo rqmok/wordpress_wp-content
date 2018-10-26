@@ -749,7 +749,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (512,	92,	'cover_photo',	''),
 (513,	92,	'_cover_photo',	'field_5bc445d801b5e'),
 (514,	94,	'_edit_last',	'1'),
-(515,	94,	'_edit_lock',	'1540525672:1'),
+(515,	94,	'_edit_lock',	'1540537282:1'),
 (516,	94,	'subtitle',	''),
 (517,	94,	'_subtitle',	'field_5bb4b8b2aadef'),
 (518,	94,	'classification',	'M'),
@@ -1106,7 +1106,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (869,	126,	'cover_photo',	''),
 (870,	126,	'_cover_photo',	'field_5bc445d801b5e'),
 (871,	129,	'_edit_last',	'1'),
-(872,	129,	'_edit_lock',	'1540537060:1'),
+(872,	129,	'_edit_lock',	'1540537301:1'),
 (873,	132,	'_wp_attached_file',	'2018/10/b2eaaf72-8f21-4390-b113-b5b6fc98261c.jpg'),
 (874,	132,	'_wp_attachment_metadata',	'a:5:{s:5:\"width\";i:899;s:6:\"height\";i:382;s:4:\"file\";s:48:\"2018/10/b2eaaf72-8f21-4390-b113-b5b6fc98261c.jpg\";s:5:\"sizes\";a:3:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:48:\"b2eaaf72-8f21-4390-b113-b5b6fc98261c-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:48:\"b2eaaf72-8f21-4390-b113-b5b6fc98261c-300x127.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:127;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:48:\"b2eaaf72-8f21-4390-b113-b5b6fc98261c-768x326.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:326;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (876,	24,	'cover_photo',	''),
@@ -1224,7 +1224,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (91,	1,	'2018-10-15 08:51:21',	'2018-10-15 08:51:21',	'',	'6',	'',	'inherit',	'open',	'closed',	'',	'6',	'',	'',	'2018-10-15 08:51:21',	'2018-10-15 08:51:21',	'',	90,	'http://localhost:3157/zeta/wp-content/uploads/2018/10/6.png',	0,	'attachment',	'image/png',	0),
 (92,	1,	'2018-10-17 01:17:35',	'2018-10-17 01:17:35',	'<strong>“What is horrifying and sad is punctuated </strong><strong>only by the heroism of its subjects and of </strong><strong>the filmmakers themselves.” </strong>COMMON SENSE MEDIA\r\n\r\nAfter five years of war in Syria, the remaining citizens of Aleppo are getting ready for a siege. Through the volunteers from the White Helmets we experience the daily life, death and struggle in the streets, where they are fighting for sanity in a city where war has become the norm. Khalid, Subhi and Mahmoud are among the first to enter the destroyed buildings, scouring through the rubble in search of bodies and signs of life. They are now living more or less under constant bombing together with the remaining 350,000 civilians in Aleppo. They all struggle with the same dilemma: should they flee and bring their families to safety, or should they stay and fight for their city?',	'Last Men in Aleppo',	'',	'publish',	'closed',	'closed',	'',	'last-men-in-aleppo',	'',	'',	'2018-10-26 03:51:27',	'2018-10-26 03:51:27',	'',	0,	'http://localhost:3157/zeta/?post_type=event&#038;p=92',	0,	'event',	'',	0),
 (93,	1,	'2018-10-17 01:16:46',	'2018-10-17 01:16:46',	'',	'7',	'',	'inherit',	'open',	'closed',	'',	'7',	'',	'',	'2018-10-17 01:16:46',	'2018-10-17 01:16:46',	'',	92,	'http://localhost:3157/zeta/wp-content/uploads/2018/10/7.png',	0,	'attachment',	'image/png',	0),
-(94,	1,	'2018-10-17 01:19:34',	'2018-10-17 01:19:34',	'<strong>“Her Sound, Her Story is a vibrant and powerful perspective on the turbulent music industry.”</strong> BEAT MAGAZINE\r\n\r\nHer Sound, Her Story is a bold, unflinching take on the issues at the heart of the Australian music industry. Hot on the heels of a successful photographic exhibition hosted in Melbourne last year, the film provides amplification for the bold voices of the female musicians making waves here and abroad. This film is particularly salient in the current cultural moment, in which major award ceremonies flat out disregard the crucial contribution of female artists, despite their indelible impact. Beloved artists including Tina Arena, Jen Cloher and Mojo Juju discuss their personal journeys and look for solutions to ensuring a more inclusive, diverse future.',	'Her Sound Her Story',	'',	'publish',	'closed',	'closed',	'',	'her-sound-her-story',	'',	'',	'2018-10-26 03:50:13',	'2018-10-26 03:50:13',	'',	0,	'http://localhost:3157/zeta/?post_type=event&#038;p=94',	0,	'event',	'',	0),
+(94,	1,	'2018-10-17 01:19:34',	'2018-10-17 01:19:34',	'<strong>“Her Sound, Her Story is a vibrant and powerful perspective on the turbulent music industry.”</strong> BEAT MAGAZINE\r\n\r\nHer Sound, Her Story is a bold, unflinching take on the issues at the heart of the Australian music industry. Hot on the heels of a successful photographic exhibition hosted in Melbourne last year, the film provides amplification for the bold voices of the female musicians making waves here and abroad. This film is particularly salient in the current cultural moment, in which major award ceremonies flat out disregard the crucial contribution of female artists, despite their indelible impact. Beloved artists including Tina Arena, Jen Cloher and Mojo Juju discuss their personal journeys and look for solutions to ensuring a more inclusive, diverse future.',	'Her Sound Her Story',	'',	'publish',	'closed',	'closed',	'',	'her-sound-her-story',	'',	'',	'2018-10-26 07:03:38',	'2018-10-26 07:03:38',	'',	0,	'http://localhost:3157/zeta/?post_type=event&#038;p=94',	0,	'event',	'',	0),
 (95,	1,	'2018-10-17 01:20:09',	'2018-10-17 01:20:09',	'',	'8',	'',	'inherit',	'open',	'closed',	'',	'8',	'',	'',	'2018-10-17 01:20:09',	'2018-10-17 01:20:09',	'',	94,	'http://localhost:3157/zeta/wp-content/uploads/2018/10/8.png',	0,	'attachment',	'image/png',	0),
 (96,	1,	'2018-10-17 01:23:18',	'2018-10-17 01:23:18',	'<strong>“This is a highly pertinent story told in an entertaining way.”</strong> THE NEW YORK TIMES\r\n\r\nA story of true life challenge and triumph, a group of young women take the stage with a fierceness – with each move it seems that they are putting everything on the line, because they are. They are teenagers on the verge of womanhood, by turns graceful, goofy, joyous, determined, elegant, insecure, hopeful but always passionate. These are the Lethal Ladies of The Baltimore Leadership School for Young Women (BLSYW), and they are not only a competitive step team headed for a multi-state showdown but are also aiming to break barriers as the first graduates of their school, whose mission is to send every single one of its students to college.',	'Step',	'',	'publish',	'closed',	'closed',	'',	'step',	'',	'',	'2018-10-26 06:23:12',	'2018-10-26 06:23:12',	'',	0,	'http://localhost:3157/zeta/?post_type=event&#038;p=96',	0,	'event',	'',	0),
 (97,	1,	'2018-10-17 01:23:12',	'2018-10-17 01:23:12',	'',	'9',	'',	'inherit',	'open',	'closed',	'',	'9',	'',	'',	'2018-10-17 01:23:12',	'2018-10-17 01:23:12',	'',	96,	'http://localhost:3157/zeta/wp-content/uploads/2018/10/9.png',	0,	'attachment',	'image/png',	0),
@@ -1399,6 +1399,7 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (92,	5,	0),
 (92,	28,	0),
 (92,	36,	0),
+(94,	5,	0),
 (94,	22,	0),
 (94,	36,	0),
 (96,	5,	0),
@@ -1469,7 +1470,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (2,	2,	'nav_menu',	'',	0,	7),
 (3,	3,	'nav_menu',	'',	0,	2),
 (4,	4,	'city',	'',	0,	0),
-(5,	5,	'city',	'',	0,	29),
+(5,	5,	'city',	'',	0,	30),
 (6,	6,	'city',	'',	0,	0),
 (7,	7,	'city',	'',	0,	0),
 (8,	8,	'city',	'',	0,	0),
@@ -1569,4 +1570,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'admin',	'$P$Bg6RX1xBIQHaYTg.nfDelxTSiaUYB./',	'admin',	'zkha0002@student.monash.edu',	'',	'2018-10-02 13:39:45',	'',	0,	'admin');
 
--- 2018-10-26 07:00:34
+-- 2018-10-26 07:04:23
