@@ -4,36 +4,13 @@
 
     <h1 class="page-heading">
         <?php
-            $title = explode(': ', get_the_archive_title())[1];
-            echo $title;
+            post_type_archive_title();
         ?>
     </h1>
 
-    <?php
-        $taxonomies = get_taxonomies( array( '_builtin' => false ) );
-
-        foreach( $taxonomies as $taxonomy ) {
-    ?>
-        <section class="filter-container">
-            <h2><?php echo $taxonomy ?></h2>
-            <ul class="filters">
-                <?php
-                    $terms = get_terms([
-                        'taxonomy' => $taxonomy,
-                        'hide_empty' => false,
-                    ]);
-
-                    foreach ( $terms as $term ) {
-                ?>
-                    <li <?php if (strtolower($title) == strtolower($term->name)) { echo 'class="selected"'; } ?>>
-                        <a href="<?php echo get_term_link($term, $taxonomy) ?>">
-                            <?php echo $term->name ?>
-                        </a>
-                    </li>
-                <?php } ?>
-            </ul>
-        </section>
-    <?php } ?>
+    <div class="card box-shadow filter-card">
+        <?php do_action('show_beautiful_filters'); ?>
+    </div>
 
     <section class="cards">
 
