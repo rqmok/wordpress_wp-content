@@ -5,6 +5,8 @@
                     allowfullscreen></iframe>
             </p>
     </header>
+<?php } elseif (get_field('cover_photo')) { ?>
+    <div id="cover-photo" style="background-image: url(<?php the_field('cover_photo'); ?>);"></div>
 <?php } ?>
 <section id="content-header">
     <h1><?php the_title(); ?></h1>
